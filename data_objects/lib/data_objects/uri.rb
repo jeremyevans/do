@@ -78,7 +78,7 @@ module DataObjects
 
     # Display this URI object as a string
     def to_s
-      string = ""
+      string = String.new
       string << "#{scheme}:"     if scheme
       string << "#{subscheme}:"  if subscheme
       string << '//'             if relative?
